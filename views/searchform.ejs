@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Japanese Learning App - Search</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div>
+            <div>
+                <a></a>
+                <div></div>
+            </div>
+            <div>
+                <ul class="no-dots">
+                    <li><button class="mainbutton">
+                        <a href="/home"><div>Home</div></a>
+                        </button>
+                    </li>
+                    <li><button class="mainbutton">
+                        <a href="/inputpage"><div>Fill your DB</div></a>
+                        </button>
+                    </li>
+                    <li><button class="mainbutton">
+                        <a href="/searchform"><div>Your Database</div></a>
+                        </button>
+                    </li>
+                    <li><button class="mainbutton">
+                        <a href="/practice"><div>Practice</div></a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        <div class="searchformcontainer">
+            <table class="table" action="/Search">
+                <thead>
+                    <form action="/searchresult" method="get">
+                        <input type="text" name="searchInput" placeholder="Search">
+                        <button class="mainbutton" type="submit">Search!</button>
+                    </form>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Kanji</th>
+                        <th>Reading</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if(data.length) {
+                        for(var i = 0; i< data.length; i++) { %>
+                        <tr>
+                            <td scope="row"><%= (i+1) %></td>
+                            <td><%= data[i].kanji %></td>
+                            <td><%= data[i].reading %></td>
+                            <td><%= data[i].meaning %></td>
+                        </tr>
+                    <% } } else { %>
+                        <tr>
+                            <td>no data</td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>

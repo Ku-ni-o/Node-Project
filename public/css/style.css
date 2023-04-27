@@ -1,0 +1,106 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+}
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 200px;
+}
+.start-button {
+    position: absolute;
+    top: 300px;
+}
+input[type=text], input[type=password] {
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.mainbutton {
+    background-color: rgb(39, 165, 14);
+    border: none;
+    color: white;
+    padding: 15px 14px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 200px;
+    text-decoration: none;
+}
+.listbutton{
+    background-color: rgb(39, 165, 14);
+    border: none;
+    color: white;
+    padding: 15px 14px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 200px;
+}
+.logoutbutton {
+    margin-left: 25px;
+}
+.sidebarbuttoncontainer {
+    margin-left: 25px;
+    margin-top: 96px;
+}
+.mainbutton:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {
+    background-color: rgb(39, 165, 14);
+    transition-duration: 0.2s;
+}
+.searchformcontainer {
+    left: 50%;
+    margin-left: 300px;
+    width: 60%;
+}
+ul.no-dots {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+}
+.inputbox {
+    margin-left: 300px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}

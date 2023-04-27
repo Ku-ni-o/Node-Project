@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Japanese Learning App - Input page</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div>
+            <div>
+                <ul class="no-dots">
+                    <li><button class="mainbutton">
+                        <a href="/home"><div>Home</div></a>
+                        </button>
+                    </li>
+                    <li><button class="mainbutton">
+                        <a href="/inputpage"><div>Fill your DB</div></a>
+                        </button>
+                    </li>
+                    <li><button class="mainbutton">
+                        <a href="/searchform"><div>Your Database</div></a>
+                        </button>
+                    </li>
+                    <li><button class="mainbutton">
+                        <a href="/practice"><div>Practice</div></a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        <div class="inputbox">
+        <h1>Kanji List </h1>
+        <form method="post" action="/add">
+
+        <label for="kanji">Kanji:</label>
+        <input type="text" name="kanji" placeholder="単語"><br>
+
+        <label for="reading">Reading:</label>
+        <input type="text" name="reading" placeholder="読み"><br>
+
+        <label for="meaning">Meaning:</label>
+        <input type="text" name="meaning" placeholder="意味"><br>
+
+        <button class="mainbutton" type="submit" >Add to List</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

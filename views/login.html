@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="/public/css/style.css" />
+        <script src="/app.js" defer></script>
+    </head>
+    <body>
+        <form action="/views/home.html">
+            <div class="container">
+
+            <div class="loginfields">
+                <label for="Username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="Username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+            </div>
+        </form>
+    </body>
+</html>
